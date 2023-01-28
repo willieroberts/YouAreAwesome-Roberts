@@ -19,7 +19,6 @@ struct ContentView: View {
                 .padding()
             
             HStack {
-                
                 Button("Awesome") {
                     messageString = "You Are Awesome!"
                     
