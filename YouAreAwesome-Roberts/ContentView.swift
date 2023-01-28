@@ -8,12 +8,25 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var messageString = "ihbiec iherc ihr chr3 r8h hcr ei9rhc oirh eo eh vr"
+    @State private var messageString = "You are awesome hw 2"
     
     var body: some View {
         
         
+        
         VStack {
+            
+            Text("You have skills")
+                .font(.largeTitle)
+                .fontWeight(.black)
+                .foregroundColor(Color("Gold-BC"))
+                .padding()
+                .background(Color("Maroon-BC"))
+                .cornerRadius(15)
+            
+            Spacer()
+            
+            
             Text(messageString)
                 .font(.largeTitle)
                 .fontWeight(.heavy)
@@ -23,8 +36,12 @@ struct ContentView: View {
                 .padding()
                 .frame(height: 150)
                 .frame(maxWidth: .infinity)
-                .border(.orange, width: 1)
+            //                .border(.orange, width: 1)
                 .padding()
+            
+            Spacer()
+            Spacer()
+            
             
             HStack {
                 Button("Awesome") {
@@ -32,6 +49,7 @@ struct ContentView: View {
                     
                 }
                 .buttonStyle(.borderedProminent)
+                Spacer()
                 
                 Button("Great") {
                     messageString = "You Are Great!"
@@ -41,8 +59,11 @@ struct ContentView: View {
                 
                 
             }
-            .border(.purple, width: 5)
+            //            .border(.purple, width: 5)
+            .padding()
         }
+        
+        
     }
 }
 
