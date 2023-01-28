@@ -16,6 +16,7 @@ struct ContentView: View {
         
         VStack {
             
+            
             Text("You have skills")
                 .font(.largeTitle)
                 .fontWeight(.black)
