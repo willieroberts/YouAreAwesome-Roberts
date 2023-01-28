@@ -8,25 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var messageString = "You are awesome hw 2"
+    @State private var messageString = ""
     
     var body: some View {
         
         
         
+        
         VStack {
-            
-            
-            Text("You have skills")
-                .font(.largeTitle)
-                .fontWeight(.black)
-                .foregroundColor(Color("Gold-BC"))
-                .padding()
-                .background(Color("Maroon-BC"))
-                .cornerRadius(15)
+
             
             Spacer()
-            
             
             Text(messageString)
                 .font(.largeTitle)
@@ -34,22 +26,22 @@ struct ContentView: View {
                 .minimumScaleFactor(0.5)
                 .multilineTextAlignment(.center)
                 .foregroundColor(.red)
-                .padding()
                 .frame(height: 150)
                 .frame(maxWidth: .infinity)
             //                .border(.orange, width: 1)
                 .padding()
             
             Spacer()
-            Spacer()
             
             
+                        
             HStack {
                 Button("Awesome") {
                     messageString = "You Are Awesome!"
                     
                 }
                 .buttonStyle(.borderedProminent)
+                
                 Spacer()
                 
                 Button("Great") {
@@ -64,8 +56,8 @@ struct ContentView: View {
             .padding()
         }
         
-        
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
