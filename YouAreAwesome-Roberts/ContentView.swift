@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     @State private var messageString = ""
     
-    
     var body: some View {
         VStack {
             Text(messageString)
