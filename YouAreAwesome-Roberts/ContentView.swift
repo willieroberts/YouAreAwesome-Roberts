@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var messageString = ""
+    @State private var messageString = "ihbiec iherc ihr chr3 r8h hcr ei9rhc oirh eo eh vr"
     
     var body: some View {
+        
+        
         VStack {
             Text(messageString)
                 .font(.largeTitle)
                 .fontWeight(.heavy)
+                .minimumScaleFactor(0.5)
+                .multilineTextAlignment(.center)
                 .foregroundColor(.red)
+                .padding()
+                .frame(height: 150)
+                .frame(maxWidth: .infinity)
+                .border(.orange, width: 1)
                 .padding()
             
             HStack {
@@ -33,6 +41,7 @@ struct ContentView: View {
                 
                 
             }
+            .border(.purple, width: 5)
         }
     }
 }
