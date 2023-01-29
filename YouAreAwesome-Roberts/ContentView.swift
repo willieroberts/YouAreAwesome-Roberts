@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var messageString = ""
+    @State private var messageString = "Namaste"
     
     var body: some View {
         
@@ -16,9 +16,11 @@ struct ContentView: View {
         
         
         VStack {
+
             
             Spacer()
             
+
             Text(messageString)
                 .font(.largeTitle)
                 .fontWeight(.heavy)
@@ -27,7 +29,6 @@ struct ContentView: View {
                 .foregroundColor(.red)
                 .frame(height: 150)
                 .frame(maxWidth: .infinity)
-            //                .border(.orange, width: 1)
                 .padding()
             
             Spacer()
@@ -51,8 +52,7 @@ struct ContentView: View {
                 
                 
             }
-            //            .border(.purple, width: 5)
-            .padding()
+             .padding()
         }
         
     }
