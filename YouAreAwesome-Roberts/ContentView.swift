@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var messageString = "Namaste"
+    let message1 = "You Are Awesome!"
+    let message2 = "You Are Great!"
     
     var body: some View {
         
@@ -16,11 +18,8 @@ struct ContentView: View {
         
         
         VStack {
-
             
             Spacer()
-            
-
             Text(messageString)
                 .font(.largeTitle)
                 .fontWeight(.heavy)
@@ -33,26 +32,17 @@ struct ContentView: View {
             
             Spacer()
             
-            
-                        
-            HStack {
-                Button("Awesome") {
-                    messageString = "You Are Awesome!"
-                    
+            Button("Show Message") {
+                if messageString == message1{
+                    messageString = message2
                 }
-                .buttonStyle(.borderedProminent)
-                
-                Spacer()
-                
-                Button("Great") {
-                    messageString = "You Are Great!"
-                    
+                else{
+                    messageString = message1
                 }
-                .buttonStyle(.borderedProminent)
-                
                 
             }
-             .padding()
+            .buttonStyle(.borderedProminent)
+            .padding()
         }
         
     }
