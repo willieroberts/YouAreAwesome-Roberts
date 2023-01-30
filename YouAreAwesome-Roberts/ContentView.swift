@@ -33,12 +33,14 @@ struct ContentView: View {
             Spacer()
             
             Button("Show Message") {
-                if messageString == message1{
-                    messageString = message2
-                }
-                else{
-                    messageString = message1
-                }
+                
+//                if messageString == message1{
+//                    messageString = message2
+//                }
+//                else{
+//                    messageString = message1
+//                }
+                messageString = (messageString == message1 ? message2 : message1)
                 
             }
             .buttonStyle(.borderedProminent)
